@@ -1,5 +1,6 @@
 FROM python:3.8.3-slim as Base
 
+RUN mkdir /opt/es-data-migrate
 ADD ./main.py /opt/es-data-migrate
 ADD ./test.json /opt/es-data-migrate
 # ADD ./requirements.txt /opt/es-data-migrate
